@@ -11,12 +11,12 @@ searchIcon.addEventListener("click", (e) => {
   e.stopPropagation();
   navSearch.classList.toggle("active")
   searchInput.removeAttribute("disabled");
+  clearSearchInput();
 });
 
 document.addEventListener("click", (e) => {
   if(!navSearch.contains(e.target)){
     navSearch.classList.remove("active");
     searchInput.setAttribute("disabled", true);
-    clearSearchInput();
   }
 })
