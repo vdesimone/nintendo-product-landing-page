@@ -156,7 +156,6 @@ body {
   color: red;
 }
 .systems_content {
-  max-height: 700px;
   display: flex;
   justify-content: space-evenly;
   padding-left: 10px;
@@ -185,14 +184,15 @@ body {
   flex-direction: column;
   flex-grow: 1;
   justify-content: space-between;
-  min-height: 400px;
   width: 100%;
 }
 .system-info {
-  list-style-position: inside;
+  list-style-position: outside;
+  margin-left: 1rem;
   padding: 0 10px;
   box-sizing: border-box;
   font-size: 0.9em;
+  margin-bottom: 50px;
 }
 .system-info h2 {
   font-size: 1.4em;
@@ -209,6 +209,7 @@ ul {
   margin-bottom: 12px;
 }
 .learn-more-btn {
+  flex: display;
   font-size: 1em;
   font-weight: bold;
   text-transform: none;
