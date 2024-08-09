@@ -4,6 +4,7 @@
   padding: 0%;
   margin: 0%;
   font-family: "Manrope", sans-serif;
+  /* transition: all 0.5s linear; */
 }
 body {
   color: white;
@@ -21,6 +22,10 @@ body {
   transition: background-color 0.5s;
   z-index: 1;
   color: white;
+}
+.navbar.scrolled{
+  background-color: #242424;
+  box-shadow: 0 2px 4px rgba(25, 25, 25, 0.3);
 }
 .navbar-items {
   flex: 1;

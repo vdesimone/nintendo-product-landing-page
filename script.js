@@ -20,3 +20,13 @@ document.addEventListener("click", (e) => {
     searchInput.setAttribute("disabled", true);
   }
 })
+
+//navbar scroll
+window.addEventListener("scroll", () => {
+  let navbar = document.querySelector(".navbar");
+  if (window.scrollY > 20) {
+    navbar.classList.add("scrolled");
+  } else {
+    navbar.classList.remove("scrolled");
+  }
+})
