@@ -119,12 +119,19 @@ body {
 .img img {
   width: 650px;
   filter: drop-shadow(0px 10px 6px rgba(0, 0, 0, 0.2));
-  animation: slideLeft 2s ease-in-out;
+  /* animation: slideLeft 2s ease-in-out; */
+}
+.video {
+  position: absolute;
+  top: 22%;
+  left: 22%;
+  width: 56%;
+  object-fit: cover;
 }
 .content {
   position: absolute;
 }
-.content h1 {
+/* .content h1 {
   font-size: 12em;
   background-clip: border-box;
   background: -webkit-linear-gradient(90deg, red 50%, #19d5ff 50%);
@@ -132,6 +139,17 @@ body {
   -webkit-text-fill-color: transparent;
   filter: drop-shadow(0px 10px 6px rgba(0, 0, 0, 0.2));
   animation: fadeIn 2s ease-in-out;
+} */
+.content h1 {
+  font-size: 12em;
+  background-clip: border-box;
+  filter: drop-shadow(0px 10px 6px rgba(0, 0, 0, 0.2));
+  color: red;
+  transition: color 0.5s linear
+}
+.content h1:hover {
+  color: #19d5ff;
+  transition: color 0.5s linear
 }
 @keyframes fadeIn {
   from {
@@ -152,7 +170,7 @@ body {
 
 /* SYSTEMS SECTION */
 .sec {
-  padding-top: 8%;
+  padding-top: 7.5%;
   width: 90%;
   margin: auto;
   text-align: center;
@@ -236,7 +254,7 @@ ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem 4rem;
-  margin-top: 10px;
+  margin-top: 20px;
   padding-left: 50px;
   padding-right: 50px;
 }
