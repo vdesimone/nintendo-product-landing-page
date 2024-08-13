@@ -319,3 +319,47 @@ ul {
   font-weight: bold;
   font-size: 1.2em;
 }
+
+/* ACCESSORIES SECTION */
+.boxes {
+  display: flex;
+  margin: 5% 0;
+}
+.box {
+  margin: 0 2%;
+  border: 2px solid red;
+  padding: 3% 2%;
+  box-shadow: rgba(0, 0, 0, 2.35) 0 5px 15px;
+  cursor: pointer;
+  transition: transform 0.6s ease, box-shadow 0.6s ease;
+  background-color: white;
+  color: black;
+  border-radius: 5%;
+}
+.box h1 {
+  padding: 10px;
+}
+.box p {
+  color: #727272;
+}
+.box img {
+  width: 100%;
+}
+.box:hover {
+  transform: scale(1.1) rotate(5deg);
+}
+.btn {
+  padding: 15px 30px;
+  background-color: #2b2b2b;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  border: 2px solid red;
+  margin-bottom: 2%;
+  border-radius: 10px;
+}
+.btn:hover {
+  color: black;
+  background-color: red;
+}
