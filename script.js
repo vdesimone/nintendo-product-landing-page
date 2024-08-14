@@ -57,3 +57,48 @@ function showScroll() {
 window.onscroll = () => {
   showScroll();
 }
+
+//scrollRevealAnimation
+ScrollReveal().reveal(".content h1", {
+  duration: 1000,
+  origin: "bottom",
+  distance: "50px",
+  interval: 200,
+  reset: true,
+  opacity: 1,
+});
+
+ScrollReveal().reveal(".img", {
+  duration: 1000,
+  origin: "bottom",
+  distance: "50px",
+  interval: 200,
+  reset: true,
+  opacity: 1,
+});
+
+ScrollReveal().reveal(".systems_product", {
+  duration: 1000,
+  origin: "bottom",
+  distance: "20px",
+  interval: 200,
+  reset: true,
+  opacity: 1,
+});
+
+ScrollReveal().reveal(".g_box", {
+  duration: 1000,
+  origin: "bottom",
+  distance: "20px",
+  interval: 200,
+  reset: true,
+  opacity: 1,
+});
+
+ScrollReveal().reveal(".box", {
+  duration: 1000,
+  origin: "bottom",
+  distance: "20px",
+  interval: 200,
+  opacity: 1,
+});

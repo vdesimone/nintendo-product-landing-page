@@ -217,7 +217,7 @@ body {
   padding: 0 10px;
   box-sizing: border-box;
   font-size: 0.9em;
-  margin-bottom: 50px;
+  margin-bottom: 2.5rem;
 }
 .system-info h2 {
   font-size: 1.4em;
@@ -254,10 +254,11 @@ ul {
 .game_boxes {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem 4rem;
+  gap: 2rem 3rem;
   margin-top: 20px;
   padding-left: 50px;
   padding-right: 50px;
+  margin-bottom: 2%;
 }
 .g_box {
   background-color: white;
@@ -286,7 +287,7 @@ ul {
 .game-img {
   transform: translateY(0%);
   transition: transform 0.2s linear;
-  margin-top: 20px;
+  margin-top: 5%;
 }
 .game-img img {
   width: 90%;
@@ -294,13 +295,13 @@ ul {
   transition: box-shadow 0.2s linear;
 }
 .game-desc {
-  padding-top: 14px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-top: 2%;
+  padding-left: 4%;
+  padding-right: 4%;
   display: flex;
   flex-direction: column;
-  width: 100%;
   height: 100%;
+  width: 100%;
 }
 .game-desc h2 {
   color: black;
