@@ -110,3 +110,50 @@ ScrollReveal().reveal(".col", {
   interval: 200,
   opacity: 1,
 });
+
+// SWITCH VIDEO
+const videoSources = [
+  "https://assets.nintendo.com/video/upload/q_auto/f_auto/c_scale,w_480/ncom/en_US/switch/refresh/games/videos/mk8d.webm",
+  "https://assets.nintendo.com/video/upload/q_auto/f_auto/c_scale,w_480/ncom/en_US/switch/refresh/games/videos/smbw_1.webm",
+  "https://assets.nintendo.com/video/upload/q_auto/f_auto/c_scale,w_480/ncom/en_US/switch/refresh/games/videos/ssbu.webm",
+  "https://assets.nintendo.com/video/upload/q_auto/f_auto/c_scale,w_480/ncom/en_US/switch/refresh/games/videos/smp.webm",
+];
+const videoElm = document.querySelector("video");
+let activeVideo = 0;
+
+videoElm.src = videoSources[activeVideo];
+
+videoElm.addEventListener("ended", function() {
+  switchVideo();
+});
+
+function switchVideo() {
+  activeVideo = ++activeVideo % videoSources.length;
+  videoElm.src = videoSources[activeVideo];
+}
+
+// function fadeIn(element) {
+//   let el = document.getElementById(element);
+//   let opacity = 0;
+//   let interval = setInterval(function() {
+//     if (opacity < 1) {
+//       opacity += 0.1;
+//       el.style.opacity = opacity;
+//     } else {
+//       clearInterval(interval);
+//     }
+//   }, 50)
+// }
+
+// function fadeOut(element) {
+//   let el = document.getElementById(element);
+//   let opacity = 1;
+//   let interval = setInterval(function() {
+//     if (opacity > 0) {
+//       opacity -= 0.1;
+//       el.style.opacity = opacity;
+//     } else {
+//       clearInterval(interval);
+//     }
+//   }, 50)
+// }
