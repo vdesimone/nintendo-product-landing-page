@@ -23,7 +23,7 @@ body {
   z-index: 1;
   color: white;
 }
-.navbar.scrolled{
+.navbar.scrolled {
   background-color: #242424;
   box-shadow: 0 2px 4px rgba(25, 25, 25, 0.3);
 }
@@ -382,24 +382,52 @@ ul {
   gap: 4rem 2rem;
   margin: auto;
 }
-.col ul {
-  list-style: none;
+.f_logo {
+  font-size: 2em;
+  font-weight: 600;
 }
-.col li a {
-  text-decoration: none;
+.col {
+  display: flex;
+  flex-direction: column;
+}
+.col p {
+  margin: 1rem 0;
   color: #ccc;
+  justify-content: center;
+  min-height: 120px;
 }
 .socials {
   display: flex;
+  flex-grow: 1;
+  align-items: center;
 }
-.socials li {
-  padding-right: 20px;
+.socials li a {
+  margin-right: 1.2rem;
+}
+.socials li i {
   font-size: 26px;
-  color: white;
+  color: #ccc;
   cursor: pointer;
+  transition: color 0.1s linear
 }
-.socials li i:hover {
+.facebook:hover {
+  color: #1877F2;
+  transition: color 0.1s linear;
+}
+.instagram:hover {
+  background-clip: border-box;
+  background: -webkit-linear-gradient(75deg, #F58529, #FEDA77, #DD2A7B, #8134AF, #515BD4, white);
+  background-size: 180% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.twitter:hover {
+  color: black;
+  transition: color 0.1s linear
+}
+.youtube:hover {
   color: red;
+  transition: color 0.1s linear
 }
 .col h4 {
   display: flex;
@@ -407,13 +435,40 @@ ul {
   height: 55px;
   align-items: center;
 }
-.col p, .col li {
-  margin: 1rem 0;
-  color: #ccc;
+.col ul li {
+  list-style: none;
 }
-.f_logo {
-  font-size: 2em;
-  font-weight: 600;
+.col li a {
+  text-decoration: none;
+  color: #ccc;
+  transition: color 0.15s linear;
+}
+.links {
+  margin-top: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.links li {
+  display: flex;
+  margin-bottom: 10px;
+}
+.links a:after {
+  content: '';
+  width: 0;
+  height: 2px;
+  background: #ccc;
+  display: block;
+  transition: 0.3s;
+}
+.links a:hover:after {
+  width: 100%;
+  background: white;
+}
+.links a:hover {
+  color: white;
+  transition: color 0.15s linear;
 }
 .footer_bar {
   display: flex;
@@ -428,6 +483,12 @@ ul {
 .footer_bar a {
   color: #909090;
   text-decoration: none;
+  transition: all .2s ease;
+}
+.footer_bar a:hover {
+  font-size: 104%;
+  color: #ccc;
+  transition: all .2s ease;
 }
 
 /* SCROLL-UP */

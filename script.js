@@ -102,3 +102,11 @@ ScrollReveal().reveal(".box", {
   interval: 200,
   opacity: 1,
 });
+
+ScrollReveal().reveal(".col", {
+  duration: 1000,
+  origin: "bottom",
+  distance: "20px",
+  interval: 200,
+  opacity: 1,
+});
