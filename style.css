@@ -119,7 +119,6 @@ body {
 .img img {
   width: 650px;
   filter: drop-shadow(0px 10px 6px rgba(0, 0, 0, 0.2));
-  /* animation: slideLeft 2s ease-in-out; */
 }
 #video {
   position: absolute;
@@ -133,41 +132,17 @@ body {
 .content {
   position: absolute;
 }
-/* .content h1 {
-  font-size: 12em;
-  background-clip: border-box;
-  background: -webkit-linear-gradient(90deg, red 50%, #19d5ff 50%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  filter: drop-shadow(0px 10px 6px rgba(0, 0, 0, 0.2));
-  animation: fadeIn 2s ease-in-out;
-} */
 .content h1 {
   font-size: 12em;
   background-clip: border-box;
   filter: drop-shadow(0px 10px 6px rgba(0, 0, 0, 0.2));
   color: red;
-  transition: color 0.5s linear
+  transition: color 0.5s linear;
+  margin: 0;
 }
 .content h1:hover {
   color: #19d5ff;
   transition: color 0.5s linear
-}
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes slideLeft {
-  from {
-    transform: translateX(-50%);
-  }
-  to {
-    transform: translateX(0%);
-  }
 }
 
 /* SYSTEMS SECTION */
@@ -202,18 +177,29 @@ body {
 }
 .systems-product-img {
   margin-bottom: 10px;
+  transition: transform 0.2s linear;
 }
 .systems-product-img img {
-  max-width: 100%;
+  max-width: 90%;
 }
 .systems-product-desc {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
   justify-content: space-between;
-  width: 100%;
 }
-.system-info {
+.systems-header {
+  margin-bottom: 20px;
+}
+.systems-header h2 {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+  transition: color 0.2s linear;
+}
+.systems-header p {
+  padding: 0 10px;
+}
+.systems-info {
   list-style-position: outside;
   margin-left: 1rem;
   padding: 0 10px;
@@ -221,22 +207,16 @@ body {
   font-size: 0.9em;
   margin-bottom: 2.5rem;
 }
-.system-info h2 {
-  font-size: 1.4em;
-}
-.system-info h2, .system-info p {
-  margin-bottom: 20px;
-}
-ul {
+.systems-info ul li {
+  margin-bottom: 2%;
   text-align: left;
 }
-.system-price {
+.systems-price {
   font-size: 1.2em;
   font-weight: bold;
   margin-bottom: 12px;
 }
 .learn-more-btn {
-  flex: display;
   font-size: 1em;
   font-weight: bold;
   text-transform: none;
@@ -246,12 +226,23 @@ ul {
   border: none;
   background-color: red;
   color: white;
+  transition: background-color 0.1s ease-in-out;
 }
 .learn-more-btn:hover {
   cursor: pointer;
   background-color: rgb(185, 0, 0);
+  transition: background-color 0.1s ease-in-out;
 }
-
+.systems_product:hover {
+  .systems-product-img {
+    transform: scale(105%);
+    transition: transform 0.2s linear;
+  };
+  .systems-header h2 {
+    color: red;
+    transition: color 0.2s linear;
+  };
+}
 /* GAMES SECTION */
 .game_boxes {
   display: grid;
