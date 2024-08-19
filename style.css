@@ -207,6 +207,8 @@ body {
 }
 .systems-header p {
   padding: 0 10px;
+  margin-bottom: 10px;
+  min-width: 54px;
 }
 .systems-info {
   list-style-position: outside;
@@ -511,4 +513,138 @@ body {
 }
 .top.show {
   bottom: 5%;
+}
+
+@media only screen and (max-width: 940px) {
+  .navbar-items {
+    position: absolute;
+    height: 100vh;
+    width: 350px;
+    top: 0;
+    background-color: #2b2b2b;
+    text-align: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    z-index: 2;
+    margin-top: 0;
+    transition: all 1s ease-in;
+  }
+  .navbar-items ul {
+    padding-right: 5px;
+  }
+  .navbar-items ul li {
+    display: block;
+    padding: 16px 0;
+    margin-left: 15px;
+  }
+  .navbar-items ul li a {
+    color: white;
+    padding: 0 18px;
+    font-size: 22px;
+  }
+  .navbar-items ul li:hover::after {
+    width: 0%;
+  }
+  .burger {
+    display: block;
+    z-index: 3;
+    position: absolute;
+    color: white;
+    right: 7%;
+    top: 20px;
+    font-size: 35px;
+    cursor: pointer;
+  }
+  .h-class {
+    left: -100%;
+  }
+  .v-class {
+    left: 0%;
+  }
+  .content h1 {
+    font-size: 9em;
+  }
+  .img {
+    position: relative;
+    top: 18%;
+  }
+  .img img {
+    width: 500px;
+  }
+
+
+  .sec {
+    padding-top: 7.8%;
+  }
+  .systems_content {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .systems_product {
+    width: auto;
+    padding: 16px;
+    margin: 0 10px;
+  }
+  .systems-product-img img {
+    max-width: 100%;
+  }
+  .systems-header {
+    margin-bottom: 10px;
+  }
+  .systems-header h2 {
+    font-size: 1.1em;
+    min-height: 60px;
+  }
+  .systems-header p {
+    font-size: 0.8em;
+    min-height: 66px;
+  }
+  .systems-info {
+    font-size: 0.7em;
+    margin-bottom: 1.2rem;
+  }
+  .systems-info ul li {
+    margin-bottom: 1%;
+  }
+  .systems-price {
+    font-size: 0.85em;
+  }
+  .learn-more-btn {
+    font-size: 0.85em;
+    padding: 10px 20px;
+  }
+
+
+  .game_boxes {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem 1rem;
+  }
+  .game-desc h2 {
+    font-size: 1em;
+    margin-bottom: 2%;
+  }
+  .game-date {
+    font-size: 0.7em;
+  }
+  .game-price {
+    font-size: 1em;
+  }
+
+  .boxes {
+    display: flex;
+    margin-top: 4.4%;
+    margin-right: 4.1%;
+    margin-bottom: 5%;
+    margin-left: 4.1%;
+  }
+  .box {
+    margin: 0 16px;
+    height: 286px;
+  }
+  .box h1 {
+    font-size: 1em;
+  }
+  .box p {
+    font-size: 0.8em;
+  }
 }

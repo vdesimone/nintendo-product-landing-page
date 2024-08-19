@@ -21,7 +21,7 @@ document.addEventListener("click", (e) => {
   }
 })
 
-//navbar scroll
+// navbar scroll
 window.addEventListener("scroll", () => {
   let navbar = document.querySelector(".navbar");
   if (window.scrollY > 20) {
@@ -31,7 +31,7 @@ window.addEventListener("scroll", () => {
   }
 })
 
-//Scroll to Top
+// Scroll to Top
 document.querySelector("#to-top").addEventListener("click", () => {
   let topInterval = setInterval(() => {
     let arrowTop = document.body.scrollTop > 0 ? document.body : document.documentElement;
@@ -58,7 +58,17 @@ window.onscroll = () => {
   showScroll();
 }
 
-//scrollRevealAnimation
+// sidebar
+let burger = document.querySelector(".burger");
+let navbarItems = document.querySelector(".navbar-items");
+let nav = document.querySelector(".nav");
+
+burger.addEventListener("click", () => {
+  navbarItems.classList.toggle("v-class");
+  nav.classList.toggle("h-class");
+})
+
+// scrollRevealAnimation
 ScrollReveal().reveal(".content h1", {
   duration: 1000,
   origin: "bottom",
@@ -91,7 +101,7 @@ ScrollReveal().reveal(".g_box", {
   origin: "bottom",
   distance: "20px",
   interval: 200,
-  reset: true,
+  reset: false,
   opacity: 1,
 });
 
