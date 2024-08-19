@@ -1,4 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+:root {
+  --dark-grey: #171717;
+  --medium-grey: #242424;
+  --light-grey: #909090;
+  --text-grey: #727272;;
+}
+
 * {
   box-sizing: border-box;
   padding: 0%;
@@ -8,7 +16,7 @@
 }
 body {
   color: white;
-  background-color: #171717;
+  background-color: var(--dark-grey);
 }
 .navbar {
   display: flex;
@@ -87,7 +95,7 @@ body {
   opacity: 0;
   outline: none;
   border: 1px solid #fff;
-  background-color: #171717;
+  background-color: var(--dark-grey);
   color: white;
   transition: opacity 0.1s ease;
   text-transform: none;
@@ -155,6 +163,7 @@ body {
 .heading {
   font-size: 4em;
   color: red;
+  filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.2));
 }
 .systems_content {
   display: flex;
@@ -226,12 +235,12 @@ body {
   border: none;
   background-color: red;
   color: white;
-  transition: background-color 0.1s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
 }
-.learn-more-btn:hover {
+.learn-more-btn:hover, .btn:hover {
   cursor: pointer;
   background-color: rgb(185, 0, 0);
-  transition: background-color 0.1s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
 }
 .systems_product:hover {
   .systems-product-img {
@@ -303,7 +312,7 @@ body {
   margin-bottom: 8px;
 }
 .game-date {
-  color: #727272;
+  color: var(--text-grey);
   font-size: 0.7em;
 }
 .game-price-div {
@@ -318,11 +327,14 @@ body {
 /* ACCESSORIES SECTION */
 .boxes {
   display: flex;
-  margin: 5% 25px;
+  margin-top: 4.4%;
+  margin-right: 25px;
+  margin-bottom: 5%;
+  margin-left: 25px;
 }
 .box {
   margin: 0 25px;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   padding: 3% 2%;
   box-shadow: rgba(0, 0, 0, 2.35) 0 5px 15px;
   cursor: pointer;
@@ -336,7 +348,7 @@ body {
   padding: 10px;
 }
 .box p {
-  color: #727272;
+  color: var(--text-grey);
 }
 .box img {
   width: 100%;
@@ -346,20 +358,18 @@ body {
   transform: scale(1.1) rotate(5deg);
 }
 .btn {
-  padding: 15px 30px;
-  background-color: #2b2b2b;
+  padding: 16px 30px;
+  background-color: red;
   color: white;
-  font-size: 20px;
-  font-weight: 500;
+  font-size: 1em;
+  font-weight: bold;
   cursor: pointer;
-  border: 2px solid red;
+  border: none;
   margin-bottom: 2%;
   border-radius: 10px;
-  transition: background-color 0.5s linear;
-}
-.btn:hover {
-  color: black;
-  background-color: red;
+  transition: background-color 0.2s ease-in-out;
+  min-width: 254px;
+  filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.3));
 }
 
 /* FOOTER */
