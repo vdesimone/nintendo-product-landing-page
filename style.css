@@ -344,7 +344,7 @@ body {
   background-color: white;
   color: black;
   border-radius: 5%;
-  height: 460px;
+  height: 450px;
 }
 .box h1 {
   padding: 10px;
@@ -515,6 +515,89 @@ body {
   bottom: 5%;
 }
 
+
+@media only screen and (max-width: 1750px) {
+  .systems-header h2 {
+    font-size: 1.3em;
+    min-height: 60px;
+  }
+  .systems-header p {
+    font-size: 0.9em;
+    min-height: 48px;
+  }
+  .systems-info {
+    font-size: 0.9em;
+  }
+  .systems-price {
+    font-size: 1.0em;
+  }
+
+  .game-desc h2 {
+    font-size: 1.3em;
+  }
+  .game-price {
+    font-size: 1.1em;
+  }
+
+  .box {
+    height: 425px;
+  }
+}
+
+@media only screen and (max-width: 1450px) {
+  .content h1 {
+    font-size: 11em;
+  }
+  .img {
+    position: relative;
+    top: 23%;
+  }
+  .img img {
+    width: 600px;
+  }
+
+  .systems-product-img img {
+    max-width: 100%;
+  }
+  .systems-header h2 {
+    font-size: 1.2em;
+    min-height: 66px;
+  }
+  .systems-header p {
+    font-size: 0.8em;
+    min-height: 66px;
+  }
+  .systems-info {
+    font-size: 0.8em;
+    margin-bottom: 1.2rem;
+  }
+  .systems-price {
+    font-size: 0.9em;
+  }
+  .learn-more-btn {
+    font-size: 0.9em;
+    padding: 13px 26px;
+  }
+
+  .game_boxes {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem 1rem;
+  }
+  .game-date {
+    font-size: 0.7em;
+  }
+  .game-desc h2 {
+    font-size: 1.1em;
+  }
+  .game-price {
+    font-size: 1.0em;
+  }
+
+  .box {
+    height: 400px;
+  }
+}
+
 @media only screen and (max-width: 940px) {
   .navbar-items {
     position: absolute;
@@ -551,7 +634,7 @@ body {
     position: absolute;
     color: white;
     right: 7%;
-    top: 20px;
+    top: 31px;
     font-size: 35px;
     cursor: pointer;
   }
@@ -566,12 +649,11 @@ body {
   }
   .img {
     position: relative;
-    top: 18%;
+    top: 19%;
   }
   .img img {
     width: 500px;
   }
-
 
   .sec {
     padding-top: 7.8%;
@@ -614,7 +696,6 @@ body {
     padding: 10px 20px;
   }
 
-
   .game_boxes {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem 1rem;
@@ -627,7 +708,7 @@ body {
     font-size: 0.7em;
   }
   .game-price {
-    font-size: 1em;
+    font-size: 0.9em;
   }
 
   .boxes {
@@ -639,7 +720,7 @@ body {
   }
   .box {
     margin: 0 16px;
-    height: 286px;
+    height: 310px;
   }
   .box h1 {
     font-size: 1em;
