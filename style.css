@@ -618,7 +618,7 @@ body {
     flex-direction: column;
     z-index: 2;
     margin-top: 0;
-    transition: all 1s ease-in;
+    transition: all 0.55s ease;
   }
   .navbar-items ul {
     padding-right: 5px;
