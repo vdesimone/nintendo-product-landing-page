@@ -253,6 +253,7 @@ body {
     transition: color 0.2s linear;
   };
 }
+
 /* GAMES SECTION */
 .game_boxes {
   display: grid;
@@ -327,27 +328,29 @@ body {
 
 /* ACCESSORIES SECTION */
 .boxes {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
   margin-top: 4.4%;
-  margin-right: 25px;
+  margin-right: 50px;
   margin-bottom: 5%;
-  margin-left: 25px;
+  margin-left: 50px;
 }
 .box {
-  margin: 0 25px;
-  padding: 3% 2%;
+  padding: 5% 5%;
   box-shadow: rgba(0, 0, 0, 2.35) 0 5px 15px;
   cursor: pointer;
   transition: transform 0.6s ease, color 0.2s ease-in-out;
   background-color: white;
   color: black;
   border-radius: 5%;
-  height: 450px;
 }
 .box h1 {
   padding: 10px;
 }
 .box p {
+  padding: 10px;
+  min-height: 101px;
   color: var(--text-grey);
 }
 .box img {
@@ -355,7 +358,7 @@ body {
 }
 .box:hover {
   color: red;
-  transform: scale(1.1) rotate(5deg);
+  transform: scale(1.1) rotate(4deg);
 }
 .btn {
   padding: 16px 30px;
@@ -365,7 +368,7 @@ body {
   font-weight: bold;
   cursor: pointer;
   border: none;
-  margin-bottom: 2%;
+  margin-bottom: 3%;
   border-radius: 10px;
   transition: background-color 0.2s ease-in-out;
   min-width: 254px;
@@ -546,9 +549,11 @@ body {
   .game-price {
     font-size: 1.1em;
   }
+}
 
-  .box {
-    height: 425px;
+@media only screen and (max-width: 1600px) {
+  .sec {
+    padding-top: 8.5%;
   }
 }
 
@@ -564,6 +569,9 @@ body {
     width: 600px;
   }
 
+  .sec {
+    padding-top: 10%;
+  }
   .systems-product-img img {
     max-width: 100%;
   }
@@ -601,8 +609,8 @@ body {
     font-size: 1.0em;
   }
 
-  .box {
-    height: 400px;
+  .boxes {
+    gap: 1rem;
   }
 }
 
@@ -636,16 +644,6 @@ body {
   .navbar-items ul li:hover::after {
     width: 0%;
   }
-  /* .burger {
-    display: block;
-    z-index: 3;
-    position: absolute;
-    color: white;
-    right: 7%;
-    top: 31px;
-    font-size: 35px;
-    cursor: pointer;
-  } */
   .burger {
     display: block;
     position: absolute;
@@ -677,7 +675,7 @@ body {
   }
 
   .sec {
-    padding-top: 11%;
+    padding-top: 16%;
   }
   .systems_content {
     padding-left: 5%;
@@ -732,22 +730,12 @@ body {
     font-size: 0.9em;
   }
 
-  .boxes {
-    display: flex;
-    margin-top: 4.4%;
-    margin-right: 4.1%;
-    margin-bottom: 5%;
-    margin-left: 4.1%;
-  }
-  .box {
-    margin: 0 16px;
-    height: 310px;
-  }
   .box h1 {
     font-size: 1em;
   }
   .box p {
-    font-size: 0.8em;
+    font-size: 0.9em;
+    min-height: 128px;
   }
 }
 
@@ -765,6 +753,9 @@ body {
     font-size: 7.5em;
   }
 
+  .sec {
+    padding-top: 20%;
+  }
   .heading {
     font-size: 3.2em;
   }
@@ -831,28 +822,21 @@ body {
   }
 
   .boxes {
-    display: flex;
-    flex-direction: column;
-    margin-top: 4.4%;
-    margin-right: 25px;
-    margin-bottom: 3%;
-    margin-left: 25px;
-  }
-  .box {
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-bottom: 20px;
-    padding: 4% 4%;
-    min-height: 380px;
+    margin-left: 13%;
+    margin-right: 13%;
+    grid-template-columns: repeat(1, 1fr);
   }
   .box h1 {
     padding: 10px;
+    font-size: 1.2em;
+  }
+  .box p {
+    min-height: 101px;
   }
   .box img {
-    width: 85%;
+    width: 90%;
   }
   .box:hover {
-
     transform: scale(1.05);
   }
   .btn {
@@ -882,5 +866,17 @@ body {
   }
   .f_logo {
     font-size: 1.8em;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .sec {
+    padding-top: 24%;
+  }
+}
+
+@media only screen and (max-width: 380px)  {
+  .box p {
+    min-height: 130px;
   }
 }
